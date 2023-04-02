@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="./css/style.css" rel="stylesheet" type="text/css">
+	<title>Project</title>
+</head>
+<body>
+	<nav class="d-flex justify-content-center">
+		<ul class="nav nav-tabs">
+			<li class="nav-item">
+				<a class="nav-link active" href="#" data-tab='calc'>Калькулятор</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#" data-tab='acc'>Форма "Создать аккаунт"</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#" data-tab='surv'>Опрос</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#" data-tab='game'>Крестики-нолики</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#" data-tab='todo'>Список дел</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#" data-tab='slider'>Кастомный слайдер</a>
+			</li>
+		</ul>
+	</nav>
+	<main>
+		<section class='container' data-tab='calc'>
+			<h1 class="text-center pt-3">Калькулятор</h1>
+
+<!-- нам нужны символы 
+	поле
+	1,2,3, +
+	4,5,6, -
+	7,8,9, *
+	С,0,=, /
+ -->
+	 		<div class="calc">
+				<input class="form-control calc-field" type="text" disabled>
+				<div class="calc-row">
+					<button class="btn btn-light btn-number">1</button>
+					<button class="btn btn-light btn-number">2</button>
+					<button class="btn btn-light btn-number">3</button>
+					<button class="btn btn-secondary btn-operator">+</button>
+				</div>
+
+				<div class="calc-row">
+					<button class="btn btn-light btn-number">4</button>
+					<button class="btn btn-light btn-number">5</button>
+					<button class="btn btn-light btn-number">6</button>
+					<button class="btn btn-secondary btn-operator">-</button>
+				</div>
+
+				<div class="calc-row">
+					<button class="btn btn-light btn-number">7</button>
+					<button class="btn btn-light btn-number">8</button>
+					<button class="btn btn-light btn-number">9</button>
+					<button class="btn btn-secondary btn-operator">*</button>
+				</div>
+
+				<div class="calc-row">
+					<button class="btn btn-danger btn-delete">C</button>
+					<button class="btn btn-light btn-number">0</button>
+					<button class="btn btn-success btn-result">=</button>
+					<button class="btn btn-secondary btn-operator">/</button>
+				</div>
+			</div>
+
+
+
+		</section>
+		<section class='container d-none' data-tab='acc'>
+			<h1 class="text-center pt-3">Форма "Создать аккаунт"</h1>
+		</section>
+		<section class='container d-none' data-tab='surv'>
+			<h1 class="text-center pt-3">Опрос</h1>
+		</section>
+		<section class='container d-none' data-tab='game'>
+			<h1 class="text-center pt-3">Крестики-нолики</h1>
+		</section>
+		<section class='container d-none' data-tab='todo'>
+			<h1 class="text-center pt-3">Список дел</h1>
+		</section>
+		<section class='container d-none' data-tab='slider'>
+			<h1 class="text-center pt-3">Кастомный слайдер</h1>
+		</section>
+	</main>
+	<script src="./js/tabs.js"></script>
+	<script src="./js/calc.js"></script>
+</body>
+</html>
